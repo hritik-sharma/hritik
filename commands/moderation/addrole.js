@@ -6,6 +6,8 @@ module.exports ={
 
 
     run:async(client,message,args)=>{
+        if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply({embed:{color:"RED",description:"❌You dont't have permission to use this command"}});
+
         let user = message.mentions.members.first()
         if(!user) return message.channel.send({embed:{color:"RED",description:"Mention a user for that role."}})
 
