@@ -22,7 +22,7 @@ module.exports ={
         
         const embed = new MessageEmbed()
         .setTitle(`${user.tag}'s avatar`)
-        .setDescription(`[Avatar URL of **${user.tag}**](${avatar})`)
+        .setDescription(`[${user.tag}'s Avatar](${avatar})`)
         .setColor("RANDOM")
         .setImage(avatar)
         .setFooter(`Requested by ${message.author.tag}`)
