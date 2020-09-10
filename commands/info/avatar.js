@@ -21,7 +21,7 @@ module.exports ={
         // Dynamic is used so that it displays gif/animated avatars also
         
         const embed = new MessageEmbed()
-        .setTitle(`${user.tag}'s avatar`)
+        .setTitle(`Avatar of ${user.tag}`)
         .setDescription(`[${user.tag}'s Avatar](${avatar})`)
         .setColor("RANDOM")
         .setImage(avatar)
