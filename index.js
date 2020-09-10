@@ -1,4 +1,4 @@
-const { Client,Collection } = require("discord.js")
+const { Client,Collection, MessageEmbed } = require("discord.js")
 
 const fs = require("fs")
 const client = new Client ({ 
@@ -14,7 +14,6 @@ const prefix = config.prefix;
     require(`./handler/${handler}`)(client);
 })
 client.on("ready",()=>{
-    
     console.log("Tutorial Bot is online")
 })
 
@@ -34,6 +33,18 @@ client.on("message",async message =>{
     if(command)
     command.run(client,message,args);
 })
-client.login(process.env.token) 
+client.login("process.env.token") ;
+
+client.on('message', message=>{
+    if (message.content ===`${prefix}server name`){
+        message.channel.send(message.guild.name);
+    }else if (message.content=== `${prefix}online`) {
+        message.channel.send(`Total Members: ${message.guild.memberCount}`);
+    }
+    else if (message.content ===`${prefix}userid`) {
+        message.channel.send(`Username: ${message.author.username }`);
+        message.channel.send(`ID ${message.author.id}`);
+    }
+});
 	
 	
