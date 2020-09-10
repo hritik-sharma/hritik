@@ -33,7 +33,7 @@ client.on("message",async message =>{
     if(command)
     command.run(client,message,args);
 })
-client.login("NzUwMzc5MzcyNDg1Mjc5ODE1.X05rPw.CBnFFMQieTLfbwtqsTuQwkzBdw8") ;
+client.login(process.env.token) ;
 
 client.on('message', message=>{
     if (message.content ===`${prefix}server name`){
