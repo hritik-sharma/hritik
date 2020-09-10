@@ -1,44 +1,43 @@
-const { RichEmbed } = require("discord.js");
-const { promptMessage } = require("../../functions.js");
+const {MessageEmbed,Message} = require("discord.js");
 
-const chooseArr = ["🗻", "📰", "✂"];
+module.exports ={
+    name:"rps",
+    category:"fun",
+    aliases:["rockpaperscissors","rpsminigames"],
+    description:" play rock,paper,scissors with the bot",
+    usage:"<rock,paper or scissors>",
+    
 
-module.exports = {
-    name: "rps",
-    category: "fun",
-    description: "Rock Paper Scissors game. React to one of the emojis to play the game.",
-    usage: "rps",
-    run: async (client, message, args) => {
-        const embed = new RichEmbed()
-            .setColor("#ffffff")
-            .setFooter(message.guild.me.displayName, client.user.displayAvatarURL)
-            .setDescription("Add a reaction to one of these emojis to play the game!")
-            .setTimestamp();
+    run: async(client,message,args) =>{
 
-        const m = await message.channel.send(embed);
-        const reacted = await promptMessage(m, message.author, 30, chooseArr);
+        let replies = ["rock","paper","scissors"];
+        let result = Math.floor(Math.random() * replies.length);
 
-        const botChoice = chooseArr[Math.floor(Math.random() * chooseArr.length)];
-
-        const result = await getResult(reacted, botChoice);
-        await m.clearReactions();
-
-        embed
-            .setDescription("")
-            .addField(result, `${reacted} vs ${botChoice}`);
-
-        m.edit(embed);
-
-        function getResult(me, clientChosen) {
-            if ((me === "🗻" && clientChosen === "✂") ||
-                (me === "📰" && clientChosen === "🗻") ||
-                (me === "✂" && clientChosen === "📰")) {
-                    return "You won!";
-            } else if (me === clientChosen) {
-                return "It's a tie!";
-            } else {
-                return "You lost!";
-            }
+        let uReply  = args[0];
+        if(!uReply){
+            return message.channel.send(`Please play with one of these replies:\`${replies.join(",")}\``)
         }
+        if(!replies.includes(uReply)){
+            return message.channel.send(`Only these responses are acceptable:\`${replies.join(",")}\``)
+        }
+        if(replies[result] === uReply ){
+            return message.channel.send("It's a tie! We had the same choice")
+        }else if(uReply === 'rock'){
+            if(replies[result] === "paper") {
+                message.channel.send("I won,my choice was 📰 😎")
+            } else return message.channel.send("My choice was ✂️ so you won")
+        }else if(uReply === "scissors"){
+            if(replies[result] === "rock"){
+                message.channel.send("I won,my choice was rock😎")
+            }  else return message.channel.send("My choice was 📰 so you won")
+        }else if(uReply === "paper"){
+            if(replies[result] === "scissors"){
+                message.channel.send("I won,my choice was ✂️😎")
+            } else return  message.channel.send("My choice was rock so you won")
+        }
+        
+        
+
     }
 }
+	
