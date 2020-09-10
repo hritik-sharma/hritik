@@ -38,8 +38,8 @@ client.login(process.env.token);
 client.on('message', message=>{
     if (message.content ===`${prefix}server name`){
         message.channel.send(message.guild.name);
-    }else if (message.content=== `${prefix}online`) {
-        message.channel.send(`Online Members: ${message.guild.memberCount}`);
+    }else if (message.content=== `${prefix}members`) {
+        message.channel.send(`Total Members: ${message.guild.memberCount}`);
     }
     else if (message.content ===`${prefix}userid`) {
         message.channel.send(`Username: ${message.author.username }`);
