@@ -33,13 +33,13 @@ client.on("message",async message =>{
     if(command)
     command.run(client,message,args);
 })
-client.login("process.env.token") ;
+client.login("NzUwMzc5MzcyNDg1Mjc5ODE1.X05rPw.CBnFFMQieTLfbwtqsTuQwkzBdw8") ;
 
 client.on('message', message=>{
     if (message.content ===`${prefix}server name`){
         message.channel.send(message.guild.name);
     }else if (message.content=== `${prefix}online`) {
-        message.channel.send(`Total Members: ${message.guild.memberCount}`);
+        message.channel.send(`Online Members: ${message.guild.memberCount}`);
     }
     else if (message.content ===`${prefix}userid`) {
         message.channel.send(`Username: ${message.author.username }`);
