@@ -16,9 +16,5 @@ module.exports ={
    
  .setFooter(`Requested by ${message.author.tag}`)
    
-
-
-
-
-      message.channel.send(embed)
+ message.channel.send(embed)
     }}

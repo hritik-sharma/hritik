@@ -14,6 +14,7 @@ const prefix = config.prefix;
     require(`./handler/${handler}`)(client);
 })
 client.on("ready",()=>{
+    
     console.log("Tutorial Bot is online")
 })
 
