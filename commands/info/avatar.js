@@ -26,7 +26,7 @@ module.exports ={
         .setColor("RANDOM")
         .setImage(avatar)
         .setFooter(`Requested by ${message.author.tag}`)
-
+.setTimestamp()
         return message.channel.send(embed)
     }
 }
