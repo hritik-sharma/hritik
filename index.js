@@ -15,6 +15,14 @@ const prefix = config.prefix;
 })
 client.on("ready",()=>{
     console.log("Tutorial Bot is online")
+    setInterval(() => {
+        const statuses = [
+        'Working 24/7 for your server',
+        'Streaming for 25 servers'
+        ]
+        const status = statuses[Math.floor(Math.random() * statuses.length)]
+        client.user.setActivity(status,{type: "Playing"})
+    }, 5000);
 })
 
 client.on("message",async message =>{
