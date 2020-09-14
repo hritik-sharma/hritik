@@ -1,7 +1,7 @@
 const {MessageEmbed} = require("discord.js")
 
 module.exports ={
-    name:"lock",
+    name:"lockdown",
     category:"moderation",
     description:"locks the @everyone role",
     usage:"<channel> lock",
