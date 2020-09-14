@@ -1,7 +1,7 @@
 const {MessageEmbed} = require("discord.js")
 
 module.exports ={
-    name:"lockdown",
+    name:"lock",
     category:"moderation",
     description:"locks the @everyone role",
     usage:"<channel> lock",
@@ -15,7 +15,7 @@ module.exports ={
 
         })
         let embed = new MessageEmbed()
-        .setTitle("Channel Locked 🔒")
+        .setTitle("Channel has been Locked 🔒")
         .setDescription(`${message.author.tag} has locked the channel`)
         .setColor("5169F2")
         message.channel.send(embed)
