@@ -11,6 +11,7 @@
   "dependencies": {
     "ascii-table": "0.0.9",
     "discord.js": "^12.3.1",
+    "mongoose": "^5.10.7",
     "parser": "^0.1.4",
     "random-puppy": "^1.1.0",
     "twemoji": "^13.0.1"
