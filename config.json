@@ -1,3 +1,4 @@
 {
-    "prefix":"/"
+    "prefix":"/",
+    "mongoPass": "mongodb+srv://hritik:hritik619@cluster0.lmz4v.mongodb.net/Cluster0?retryWrites=true&w=majority"
 }
