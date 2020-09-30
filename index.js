@@ -19,7 +19,7 @@ client.on("ready",()=>{
         let status = [` ${client.guilds.cache.size} servers`,`  ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)} users `,' /help']
         let rstatus = Math.floor(Math.random() * status.length)
         client.user.setActivity(status[rstatus], {type:"WATCHING"});
-    };setInterval(randomStatus, 20000 )
+    };setInterval(randomStatus, 10000 )
 })
 
 client.on("message",async message =>{
