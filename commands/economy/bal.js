@@ -21,13 +21,13 @@ module.exports ={
             if(!data){
                 const newD = new Data ({
                     id:message.author.id,
-                    Money:100,
+                    Money:500,
                     daily:0,
                     Bank:0,
                 })
                 newD.save().catch(err => console.log(err));
                 let user = message.mentions.users.first() || message.author ;
-                return message.channel.send({embed:{color:"810CEE",description:`${user.tag} you have been 100 coins as starter`}})
+                return message.channel.send({embed:{color:"810CEE",description:`${user.tag} you have been 500 coins as starter`}})
             }else{
                 let user = message.mentions.users.first() || message.author ;
                 let embed = new MessageEmbed()
