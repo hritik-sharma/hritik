@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const config = require("../../config.json")
 const {MessageEmbed} = require("discord.js")
-
+const ms = require("parse-ms")
 mongoose.connect(config.mongoPass,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
@@ -14,7 +14,7 @@ module.exports={
     category:"economy",
 
     run:async(client,message,args) =>{
-        let timeout = 120000;
+        let timeout = 45000;
         let reward = Math.floor(Math.random()* Math.floor(600)) //You can set any number
 
         Data.findOne({
@@ -38,7 +38,7 @@ module.exports={
                     let time = ms(timeout -(Date.now()-data.beg));
 
                     let embed = new MessageEmbed()
-                    .setDescription(`You can beg again in **${time.hours}h ${time.minutes}m ${time.seconds}s**`)
+                    .setDescription(`I'm not an ATM stop asking for money, You can beg again in **${time.minutes}m ${time.seconds}s**`)
                     .setColor("RANDOM")
 
                     message.channel.send(embed)
@@ -48,7 +48,7 @@ module.exports={
                     data.save().catch(err => console.log(err));
                     let member = message.guild.members.cache.random();
                     let embed = new MessageEmbed()
-                    .setDescription(`Congrats!!  ${member} finally donated ${reward} coins to ${message.author}`)
+                    .setDescription(`Congrats!!  ${member} finally donated ${reward} coins to ${message.author}!`)
                     .setColor("RANDOM")
                     message.channel.send(embed)
 
