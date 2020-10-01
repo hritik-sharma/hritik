@@ -38,7 +38,8 @@ module.exports={
                     let time = ms(timeout -(Date.now()-data.beg));
 
                     let embed = new MessageEmbed()
-                    .setDescription(`I'm not an ATM stop asking for money, You can beg again in **${time.minutes}m ${time.seconds}s**`)
+                    .setTitle('**Slow it down**')
+                    .setDescription(` **Dude!!** I'm not an ATM stop asking for money \n You can beg again in **${time.minutes}m ${time.seconds}s** \n The default cooldown is **45s**`)
                     .setColor("RANDOM")
 
                     message.channel.send(embed)
