@@ -31,8 +31,8 @@ module.exports ={
             }else{
                 let user = message.mentions.users.first() || message.author ;
                 let embed = new MessageEmbed()
-                .setTitle(`Balance of ${user.tag}`)
-                .setDescription(`Money: ${data.Money}\nBank: ${data.Bank}` )
+                .setTitle(`${user.tag}'s balance`)
+                .setDescription(`wallet ${data.Money}\nBank: ${data.Bank}` )
                 .setColor("810CEE")
                 message.channel.send(embed)
             }
