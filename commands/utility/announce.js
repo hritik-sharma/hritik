@@ -2,7 +2,7 @@ const{MessageEmbed,Message} = require ("discord.js")
 
 module.exports ={
     name:"announce",
-    category:"moderation",
+    category:"utility",
 
     run:async(client,msg,args) =>{
      let mesg = args.join(" ");
