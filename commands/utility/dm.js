@@ -5,7 +5,7 @@ module.exports ={
     category:"moderation",
 
     run:async(client,msg,args) =>{
-     let mesg = args.join(" ");
+     let mesg = args.slice(1).join(" ");
 
      var user = msg.mentions.users.first();
           
