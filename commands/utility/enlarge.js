@@ -13,7 +13,7 @@ module.exports ={
 
     
     const emoji = args[0];
-    if (!emoji) return message.channel.send("No emoji provided!");
+    if (!emoji) return msg.channel.send("No emoji provided!");
 
     let custom = Discord.Util.parseEmoji(emoji);
     const embed = new Discord.MessageEmbed()
