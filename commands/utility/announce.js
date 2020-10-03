@@ -2,11 +2,11 @@ const{MessageEmbed,Message} = require ("discord.js")
 
 module.exports ={
     name:"announce",
-    category:"utility",
+    category:"moderation",
 
     run:async(client,msg,args) =>{
-     let mesg = args.slice(1).join();
-     if (!msg.member.hasPermission('ADMINISTRATOR')) return msg.reply({embed:{color:'RED',description:'you do not have the permissions to use this command'}})
+     let mesg = args.slice(2).join(" ");
+     if (!msg.member.hasPermission('MANAGE_SERVER')) return msg.reply({embed:{color:'RED',description:'you do not have the permissions to use this command'}})
      if(!mesg) return msg.reply({embed:{color:"RED",description:"please write something to announce \n Command usage: ```/announce  (channel_name) (write_announcement)``` \n Remember: brackets are just for an instance"}})
     
 
