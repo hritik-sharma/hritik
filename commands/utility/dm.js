@@ -1,7 +1,7 @@
 const{MessageEmbed,Message} = require ("discord.js")
 
 module.exports ={
-    name:"dmm",
+    name:"dm",
     category:"moderation",
 
     run:async(client,msg,args) =>{
