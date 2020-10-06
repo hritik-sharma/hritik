@@ -8,10 +8,10 @@ module.exports ={
    
 
         let msg1 = args.join(" ");
-        if (!msg1) {
+        if (!msg) {
         return message.channel.send("please enter some text")
                       }
-        message.channel.send(`${msg1}`) 
+        msg.channel.send(`${msg1}`) 
       
         
          }
