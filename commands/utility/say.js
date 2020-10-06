@@ -7,11 +7,11 @@ module.exports ={
     run:async(client,msg,args) =>{
    
 
-        let msg = args.join(" ");
-        if (!msg) {
+        let msg1 = args.join(" ");
+        if (!msg1) {
         return message.channel.send("please enter some text")
                       }
-        message.channel.send(`${msg}`) 
+        message.channel.send(`${msg1}`) 
       
         
          }
