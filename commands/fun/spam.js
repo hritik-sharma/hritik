@@ -4,8 +4,7 @@ const Discord = module.require("discord.js");
      description: "Another fun command", run: async(client, message, args) => { 
      let msg = args.join(" ");
      if (!msg) {
-     return
-     message.channel.send("Error : No Text Found to Spam")
+     return message.channel.send("Error : No Text Found to Spam")
                    }
      message.channel.send(`${msg}`) 
      message.channel.send(`${msg}`) 
