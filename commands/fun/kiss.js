@@ -36,7 +36,7 @@ module.exports ={
           let  user = message.mentions.users.first();
 
             let em = new MessageEmbed()
-            .setDescription(`**${message.author.tag}** kisses **${user.tag}!Cute!**`)
+            .setDescription(`**${message.author.tag}** kisses **${user.tag}! Cute!**`)
             .setImage(random)
             .setColor('LUMINOUS_VIVID_PINK')
             message.channel.send(em)
