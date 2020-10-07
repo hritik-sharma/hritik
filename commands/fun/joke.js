@@ -110,9 +110,7 @@ let jokes = [
 {
     title:"Parents Raat Ko Sex Kar Rahe Thhey Achanak Hi Bache Ki Neend Khull Gayi Papa: “Beta Neend Nahi Aa Rahi Kya?”Beta: “Jab Kisi Ki Maa Ch*Dh Rahi Ho To Bachhe Ko Kese Neend Aayegi“"
 },
-{
-    title:"Bus Mein Jagah Nahi Thi To Ladki Ko 1 Uncle Ne God Me Bitha Liya. Thodi Der Mein Hi Ladki Jhatke Se Uth Gayi Or Boli: Uncle Ya To Usko Bitha Lo Ya Mujhko..!!"
-},
+
 {
     title:"Teacher Ne Science Class Mein Chinki Se Puchha. \n Teacher: “Ladki Or Ladke Mein Kya Farak Hai?” \n Chinki: “Ji Ladki Chah Kar Bhi Ek Saal Mein Sirf Ek Hi Bache Ki Maan Ban Sakti Hai Aur Ladka Chahe To Ek Saal Mein 365 Bachon Ka Baap Ban Sakta Hai.“"
 },
