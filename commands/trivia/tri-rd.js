@@ -199,7 +199,106 @@ let questions = [
     options: ["Its more specific heat", "Its more value of the dielectric constant", "Less molecular disassociation in H20", "Presence of hydrogen bonding among the molecules of H20"],
     correct: 4,
   },
-
+  {
+    title: "Union Budget of India is presented by whom and in which house/ houses of the Parliament? ",
+    options: ["Finance Minister of India; Lok Sabha", "Prime Minister of India; Rajya Sabha", "President of India; in joint session of Parliamnet", "Cabinet Secretary; Both Lok Sabha and Rajya Sabha"],
+    correct: 1,
+  },
+  {
+    title: "What is the longest that an elephant has ever lived? (That we know of)",
+    options: ["17 years ", "49 years ", "86 years ", "142 years "],
+    correct: 4,
+  },
+  {
+    title: " How many rings are on the Olympic flag?",
+    options: ["4", "5", "7", "none"],
+    correct: 5,
+  },
+  {
+    title: "How did Spider-Man get his powers?",
+    options: ["Military experiment gone awry ", "Born with them", "Woke up with them after a strange dream", "Bitten by a radioactive spider "],
+    correct: 4,
+  },
+  {
+    title: "How many holes are on a standard bowling ball?",
+    options: ["2", "3", "4", "5"],
+    correct: 2,
+  },
+  {
+    title: "What are the main colors on the flag of Spain?",
+    options: ["Black and yellow", "Green and white ", "Black and white", "Red and Yellow"],
+    correct: 4,
+  },
+  {
+    title: "What is the name of this symbol: ¶",
+    options: ["Fermata ", "Pilcrow", "Interrobang","Biltong"],
+    correct: 2,
+  },
+  {
+    title: "Which of these countries was NOT a part of the Soviet Union?",
+    options: ["Ukraine", "Georgia", "Poland", "Belarus"],
+    correct: 3,
+  },
+  {
+    title: "Which of these countries was NEVER part of the British Empire?",
+    options: ["Thailand ", "Kenya ", "Ireland ", "New Zealand "],
+    correct: 1,
+  },
+  {
+    title: " Which of these countries is NOT majority-Muslim?",
+    options: ["Indonesia ", "Morocco ", "Albania ", "Ethiopia "],
+    correct: 4,
+  },
+  {
+    title: "Which of these cities is NOT in India?",
+    options: ["Karachi ", "Bhopal", "Bangalore", "Chennai"],
+    correct: 1,
+  },
+  {
+    title: "Which Bollywood personality has launched an online platform called ‘Pravasi Rojgar’ to help migrants find job opportunities?",
+    options: ["Nana Patekar", "Nawazuddin Siddiqui", " Sonu Sood", "Amitabh Bachchan"],
+    correct: 3,
+  },
+  {
+    title: "What is the name of the National-award winning Bollywood choreographer, who recently passed away?",
+    options: ["Saroj Khan", "Protik Prakash", " Tridib Ghosh", "Geetha Nagabhushan"],
+    correct: 1,
+  },
+  {
+    title: "Which Bollywood personality was named by NITI Aayog to promote the Women Entrepreneurship platform (WEP)?",
+    options: ["Salman Khan", "Akshay Kumar", "Sushant Singh Rajput", "Vidya Balan"],
+    correct: 3,
+  },
+  {
+    title: "The Versatile Bollywood actor Irrfan Khan, who recently passed away, had won National award for which movie?",
+    options: ["Lunch Box", "Paan Singh Tomar", "Life of Pi", "Haider"],
+    correct: 2,
+  },
+  {
+    title: "Which Bollywood celebrity has been appointed as the first ever brand ambassador of IDFC FIRST Bank?",
+    options: ["Ranveer Singh", "Amitabh Bachchan", "Shah Rukh Khan", "Salman Khan"],
+    correct: 2,
+  },
+  {
+    title: "As of 2020, which is the only Bollywood movie to win 13 Filmfare Awards?",
+    options: ["Uri: The Surgical Strike", "Article 15 ", "Saand Ki Aankh", "Gully Boy"],
+    correct: 4,
+  },
+  {
+    title: "Which of the following movies has became the first Bollywood film ever to release in Saudi Arabia?",
+    options: ["Pad Man", "Raazi", "Gold", "Parmanu"],
+    correct: 3,
+  },
+  {
+    title: "Which Bollywood personality has been honoured by European Union for strengthening Europe-India cultural ties?",
+    options: [" Akshay Kumar", "Amitabh Bachchan", "Deepika Padukone", " Priyanka Chopra"],
+    correct: 2,
+  },
+  {
+    title: "Preity Zinta made her debut in this film.",
+    options: ["Soldier", "Dil Se", "Sangharsh", "Kya Kehna"],
+    correct: 2,
+  },
 ];
 
 module.exports = {

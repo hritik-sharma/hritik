@@ -80,6 +80,55 @@ let jokes = [
 {
     title:"Baccha Juice Ki Dukan Par..\n “Papa Kya Koi Aisi Ulti Machine Nahi Hai Jisme Juice Dalo To Fal Nikle?” \n Papa- Hai Na Beta, \n Tu Usi Ka To Fal Hai"
 },
+{
+    title:"5 Things To Remember Always: \n 1. Lun Aur Pani Apna Rasta Khud Bana Laitey Hein \n 2.Jazbat Aur Mumey Jitnay Dabaoo Barthay Hein \n  3.Doodh Phatnay Ki Aur Gand Phatnay Ki Awaz Nahi Hoti \n 4.Gari Aur Biwi Kisi Ko Mat Doo Chod Kar Wapis Mileygi \n 5.Sanp Aur Phudi Jahan Milay Mar Dooo"
+},
+{
+    title:"A Movie On Lesbians Was Named ‘Fire’, A Movie On HomoSexuals Would Be Named ‘Backfire’, & On BiSexuals Would Be “Kabhi Pussy Kabhi Bum”"
+},
+{
+    title:"Baba Saxidas Ji Ki Mahaan Kitab Sex Ki Bulandiyo Mein Se Ek Behad Hi Kaam Ki Baat. \n Radio Ka Antena Aur Larki Ki Taangein Jitni Jyada Uper Hogi, \n Conection Utna Hi Achha Or Behtar Hoga."
+},
+{
+    title:"Pati Sex Karte Hue Bola- Darling Ladka Nikalu Ya Ladki? \n Patni- Dard Se Meri Gaand Fati Ja Rahi Hai. \n  Pahle Jo Dala Hai Wo Nikalo"
+},
+{
+    title:"Pathan Biwi Se: “Aaj Hum Aage Se Sex Karega” \n  Wife Ye Sun Ke Khushi Se Salwar Utaar Ke Tangein Utha Ke Bed Pe Lait Gayi \n  Pathan: “April Fool, April Fool Banaya.“"
+},
+{
+    title:"Husband Ne Magazine Pardhte Hue Pass \n Leti Biwi Ki Choot Main Ungli Kardi.. \n Biwi: awww Jaanu Sex Ka Mood Hai? \n Husband: Nahi Page Palantne K Liye Ungli Geeli Ki Hai."
+},
+{
+    title:"Golden Words By Swami Lunnacharya \n  Kitab Aur Taange Kholne Se Pahle Ungli Par Thook Lagani Chahiye"
+},
+{
+    title:"Ise Jor Jor Se Padho…. \n  Ah Aah Aaah… Uie Uiee Uieee… \n   Yes Yes Yes No No No Yes..\n  Yes Aaaaah ….. \n Dekha Hum To Mobile Pe Bhi G**Nd Mar Dete Hai!!!"
+},
+{
+    title:"Suhagrat Pe Pati Biwi Par Chada To Biwi Hansi, \n  Fir Hansi…. Dobara Hansi Aur Zor Zor Se Hasne Lagi \n  Pati Hairan Hoke Gusse Se Bola: “Abe Sali Tujhe Kya Hua, Hass Kyu Rahi Hai?” \n Biwi Hanste Hue: “Hehehe Vo Pankhe Ke Beech Jo Gol Chakri Hai Na Uss Mein Aapki Gaand Dikh Rahi Hai“"
+},
+{
+    title:"Parents Raat Ko Sex Kar Rahe Thhey Achanak Hi Bache Ki Neend Khull Gayi Papa: “Beta Neend Nahi Aa Rahi Kya?”Beta: “Jab Kisi Ki Maa Ch*Dh Rahi Ho To Bachhe Ko Kese Neend Aayegi“"
+},
+{
+    title:"Bus Mein Jagah Nahi Thi To Ladki Ko 1 Uncle Ne God Me Bitha Liya. Thodi Der Mein Hi Ladki Jhatke Se Uth Gayi Or Boli: Uncle Ya To Usko Bitha Lo Ya Mujhko..!!"
+},
+{
+    title:"Teacher Ne Science Class Mein Chinki Se Puchha. \n Teacher: “Ladki Or Ladke Mein Kya Farak Hai?” \n Chinki: “Ji Ladki Chah Kar Bhi Ek Saal Mein Sirf Ek Hi Bache Ki Maan Ban Sakti Hai Aur Ladka Chahe To Ek Saal Mein 365 Bachon Ka Baap Ban Sakta Hai.“"
+},
+{
+    title:"Santa Ke Ghar Beta Paida Hua, Santa Khushi Se Preeto Ko Choomte Hue Bola \n  Santa: “Bilkul Mere Jaisi Aankhein Choti Si, Meri Jaisi Naak Choti Si” \n Preeto Bachhe Ka Nappy Khol Ke Sharmati Hue Boli \n  Preeto: “Yahan Baazi Maar Hi Gaya Ladka“"
+},
+{
+    title:"Q: “Aadmi Or Bandar Mein Kya Farak Hai?” \n A: “Bandar Hamesha Daal Per Ucchalta Hai Or Aadmi Andar Daal Kar Ucchaltaa Hai“."
+},
+{
+    title:"16 Sal Ki Umr Me… \n  Phli Bar Kiya To Khun Aya… \n  2Bar Kiya Bhut Dard Hua  \n 3 Bar Kiya Bhut Jln Hui  \n 4 Bar Smoothly Hua…  \n .  \n  .\n . \n  \n. \n . \n Sudhr Jao Kmino….Shaving Ki Bat Kr Ra Hu…. \n (‘.’) \n <))> /n Kbhi To Shuddh Socha Kr Yr"
+},
+{
+    title:"Ek Accedient Mein Santa Ki Gaand Fatt Jaati Hai \n Wo Hospital Tanke Lagvane Jata Hai \n   Nurse Ne Us Se Pucha: “Kitni Khulli Rakhni Hai?” \n  Santa: “Jitni Aapki Hai” \n Nurse: “Fir To Aur Fadni Padegi”"
+},
+
 ]
 
 module.exports ={

@@ -10,7 +10,7 @@ module.exports ={
         const embed = new MessageEmbed()
    
         .setTitle('Trivia topics list🧾🧾')
-        .setDescription('**Type the following commands for your fav topics to start playing trivia:** \n \n **tri-chem , tri-bio , tri-gk ,tri-rd (random)**')
+        .setDescription('**Type the following commands for your fav topics to start playing trivia:** \n \n **tri-chem , tri-bio , tri-gk, tri-ent(entertainment) ,tri-rd (random)**')
         .setColor("LUMINOUS_VIVID_PINK")
         .setFooter(`add my prefix in front of every command`)
        

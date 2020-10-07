@@ -75,7 +75,66 @@ let questions = [
     options: ["Asia", "Europe", "North America", "Africa"],
     correct: 4,
   },
-  
+  {
+    title: "Union Budget of India is presented by whom and in which house/ houses of the Parliament? ",
+    options: ["Finance Minister of India; Lok Sabha", "Prime Minister of India; Rajya Sabha", "President of India; in joint session of Parliamnet", "Cabinet Secretary; Both Lok Sabha and Rajya Sabha"],
+    correct: 1,
+  },
+  {
+    title: "What is the longest that an elephant has ever lived? (That we know of)",
+    options: ["17 years ", "49 years ", "86 years ", "142 years "],
+    correct: 4,
+  },
+  {
+    title: " How many rings are on the Olympic flag?",
+    options: ["4", "5", "7", "none"],
+    correct: 5,
+  },
+  {
+    title: "How did Spider-Man get his powers?",
+    options: ["Military experiment gone awry ", "Born with them", "Woke up with them after a strange dream", "Bitten by a radioactive spider "],
+    correct: 4,
+  },
+  {
+    title: "How many holes are on a standard bowling ball?",
+    options: ["2", "3", "4", "5"],
+    correct: 2,
+  },
+  {
+    title: "What are the main colors on the flag of Spain?",
+    options: ["Black and yellow", "Green and white ", "Black and white", "Red and Yellow"],
+    correct: 4,
+  },
+  {
+    title: "What is the name of this symbol: ¶",
+    options: ["Fermata ", "Pilcrow", "Interrobang","Biltong"],
+    correct: 2,
+  },
+  {
+    title: "Which of these countries was NOT a part of the Soviet Union?",
+    options: ["Ukraine", "Georgia", "Poland", "Belarus"],
+    correct: 3,
+  },
+  {
+    title: "Which of these countries was NEVER part of the British Empire?",
+    options: ["Thailand ", "Kenya ", "Ireland ", "New Zealand "],
+    correct: 1,
+  },
+  {
+    title: " Which of these countries is NOT majority-Muslim?",
+    options: ["Indonesia ", "Morocco ", "Albania ", "Ethiopia "],
+    correct: 4,
+  },
+  {
+    title: "Which of these cities is NOT in India?",
+    options: ["Karachi ", "Bhopal", "Bangalore", "Chennai"],
+    correct: 1,
+  },
+  {
+    title: "Which Bollywood personality has launched an online platform called ‘Pravasi Rojgar’ to help migrants find job opportunities?",
+    options: ["Nana Patekar", "Nawazuddin Siddiqui", " Sonu Sood", "Amitabh Bachchan"],
+    correct: 3,
+  },
 ];
 
 module.exports = {
