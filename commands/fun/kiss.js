@@ -1,23 +1,17 @@
 const{MessageEmbed,Message} = require ("discord.js")
 
 let gifs = [
-    "https://media.tenor.com/images/b020758888323338c874c549cbca5681/tenor.gif",
-    "https://media.tenor.com/images/48963a8342fecf77d8eabfd2ab2e75c1/tenor.gif",
-    "https://media.tenor.com/images/dc329c68542d91ce2e00e8c162be8746/tenor.gif",
-    "https://media.tenor.com/images/822b11c4ab7843229fdd4abf5ccadf61/tenor.gif",
-    "https://media.tenor.com/images/2346a83cb600c3a8feb4000d515b7c0c/tenor.gif",
-    "https://media.tenor.com/images/a23d2ec86610bd1dd026a07853992b57/tenor.gif",
-    "https://media.tenor.com/images/faadbe17f1b4fbf399be38eaddff6e05/tenor.gif",
-    "https://media.tenor.com/images/25359520a0973f896b002689ed90db8d/tenor.gif",
-    "https://media.tenor.com/images/5fae48a5065440df87efb803cf8e43ce/tenor.gif",
-    "https://media.tenor.com/images/924c9665eeb727e21a6e6a401e60183b/tenor.gif",
-    "https://media.tenor.com/images/0136ddedea728ae27df8fbcd19d680f5/tenor.gif",
-    "https://media.tenor.com/images/be2b3298bc9880b9ffcdc7a47635fff6/tenor.gif",
-     "https://media.tenor.com/images/dd777838018ab9e97c45ba34596bb8de/tenor.gif",
-     "https://media.tenor.com/images/912baa6ce415c3a783969c3e63a5b6b9/tenor.gif",
-     "https://media.tenor.com/images/26aaa1494b424854824019523c7ba631/tenor.gif",
+    
+       
+    "https://media1.tenor.com/images/ea9a07318bd8400fbfbd658e9f5ecd5d/tenor.gif?itemid=12612515",
      "https://cdn.weeb.sh/images/SJINn6OPW.gif",
+    "https://media1.tenor.com/images/3d56f6ef81e5c01241ff17c364b72529/tenor.gif?itemid=13843260",
+    "https://media1.tenor.com/images/896f0159d6605b27c59ef3c3f818d664/tenor.gif?itemid=16490903",
      "https://cdn.weeb.sh/images/ryEvhTOwW.gif",
+    "https://media1.tenor.com/images/d0cd64030f383d56e7edc54a484d4b8d/tenor.gif?itemid=17382422",
+    "https://media1.tenor.com/images/d307db89f181813e0d05937b5feb4254/tenor.gif?itemid=16371489",
+    "https://media1.tenor.com/images/ba1841e4aeb5328e41530d3289616f46/tenor.gif?itemid=14240425",
+    ""
 
     ]
 module.exports ={
@@ -36,9 +30,10 @@ module.exports ={
           let  user = message.mentions.users.first();
 
             let em = new MessageEmbed()
-            .setDescription(`**${message.author.tag}** kisses **${user.tag}! Cute!**`)
+            .setDescription(`**${message.author.tag}** kisses **${user.tag} !Cute!**`)
             .setImage(random)
             .setColor('LUMINOUS_VIVID_PINK')
+            .setFooter("They are looking hot!")
             message.channel.send(em)
 
         }
