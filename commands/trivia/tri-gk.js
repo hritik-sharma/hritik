@@ -135,6 +135,7 @@ let questions = [
     options: ["Nana Patekar", "Nawazuddin Siddiqui", " Sonu Sood", "Amitabh Bachchan"],
     correct: 3,
   },
+  // 25 total
 ];
 
 module.exports = {

@@ -63,6 +63,7 @@ let questions = [
   options: ["Its more specific heat", "Its more value of the dielectric constant", "Less molecular disassociation in H20", "Presence of hydrogen bonding among the molecules of H20"],
   correct: 4,
 },
+//10
 ];
 
 module.exports = {

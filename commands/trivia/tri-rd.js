@@ -299,6 +299,60 @@ let questions = [
     options: ["Soldier", "Dil Se", "Sangharsh", "Kya Kehna"],
     correct: 2,
   },
+
+  
+{
+  title: "Which among the following is the most important role played by Ribosome in the cells?",
+  options: ["Synthesis of RNA", "Synthesis of DNA", "Synthesis of Proteins", "Metabolism of Carbohydrates"],
+  correct: 3,
+},
+{
+  title: "Which organ in herbivorous animals helps in digestion of starch through bacteria?",
+  options: ["Intestine", "Stomach", "Caecum", "Liver"],
+  correct: 3,
+},
+{
+  title: "Which among the following organs open in small intestine through Pylorous?",
+  options: ["Stomach", "Liver", "Pancreas", "All the above"],
+  correct: 1,
+},
+{
+  title: "Which among the following is a millet?",
+  options: ["Sorghum", " Maize", "Wheat", "Rice"],
+  correct: 1,
+},
+{
+  title: "Which among following is not a Fish?",
+  options: ["Cuttle Fish", "Gold Fish", "Dog Fish", "Zebra Fish"],
+  correct: 1,
+},
+{
+  title: "Which among the following is the correct location of Adrenal Glands in Human Body?",
+  options: ["Above kidneys", "Below kidneys", "Above Medulla Oblongata", "Near Pancreases"],
+  correct: 1,
+},
+{
+  title: "Which of the following is a Gymnosperm?",
+  options: ["Cashew", "Chilgoza", "Pistachio", "None of the above"],
+  correct: 2,
+},
+{
+  title: "The monocarpic plants produce flowers only ________?",
+  options: ["Once in a year", "Once in a season", "Once in lifetime", "One flower per plant"],
+  correct: 3,
+},
+{
+  title: "Deposition of which among the following in the joints, causing inflammation is reason of Gout, one of the forms of arthritis?",
+  options: ["Lactic Acid", "Oxalic Acid", "Acetic Acid", "Uric Acid"],
+  correct: 4,
+},
+{
+  title: "Which blood group is universal acceptor?",
+  options: ["O+", "AB", "AB-", "O-"],
+  correct: 2,
+},
+
+
 ];
 
 module.exports = {
