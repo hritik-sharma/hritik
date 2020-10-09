@@ -88,7 +88,7 @@ let questions = [
   {
     title: " How many rings are on the Olympic flag?",
     options: ["4", "5", "7", "none"],
-    correct: 5,
+    correct: 2,
   },
   {
     title: "How did Spider-Man get his powers?",
