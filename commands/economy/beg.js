@@ -9,6 +9,17 @@ mongoose.connect(config.mongoPass,{
 const Data = require('../../models/data.js')
 const data = require("../../models/data.js")
 
+
+let replies = [
+            {
+                title:"nony"},
+              {
+                title:"Narender modi"
+              },
+              {
+                 title:"warren buffet"
+                },
+            ];
 module.exports={
     name:"beg",
     category:"economy",
@@ -16,8 +27,9 @@ module.exports={
     run:async(client,message,args) =>{
 
 
-        let replies = ["nony","Narender modi","warren buffet"];
-        let result = Math.floor(Math.random() * replies.length);
+      
+        let result = replies[Math.floor(Math.random() * replies.length)];
+       
 
         let timeout = 45000;
         let reward = Math.floor(Math.random()* Math.floor(600)) //You can set any number
