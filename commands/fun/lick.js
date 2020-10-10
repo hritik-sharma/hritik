@@ -40,7 +40,7 @@ module.exports ={
           let  user = message.mentions.users.first();
 
             let em = new MessageEmbed()
-            .setDescription(`**${message.author.tag} licks ${user.tag} how Cute!**`)
+            .setDescription(`**${message.author.username} licks ${user.username} how Cute!**`)
             .setImage(random)
             .setColor('LUMINOUS_VIVID_PINK')
          

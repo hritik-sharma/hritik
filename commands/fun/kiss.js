@@ -11,10 +11,8 @@ let gifs = [
     "https://media1.tenor.com/images/d0cd64030f383d56e7edc54a484d4b8d/tenor.gif?itemid=17382422",
     "https://media1.tenor.com/images/d307db89f181813e0d05937b5feb4254/tenor.gif?itemid=16371489",
     "https://media1.tenor.com/images/ba1841e4aeb5328e41530d3289616f46/tenor.gif?itemid=14240425",
-    
     "https://media1.tenor.com/images/ef4a0bcb6e42189dc12ee55e0d479c54/tenor.gif?itemid=12143127",
     "https://media1.tenor.com/images/59966642c3fe571ae12fb1d8b13feec5/tenor.gif?itemid=10662832",
-    
     "https://media1.tenor.com/images/6f455ef36a0eb011a60fad110a44ce68/tenor.gif?itemid=13658106",
     "https://media1.tenor.com/images/34ecc943dd11f0c55689e25f1bacddfb/tenor.gif?itemid=14816388",
     "https://media1.tenor.com/images/24fdab77e4474180888c9a42a22d67e8/tenor.gif?itemid=5612596",
@@ -46,7 +44,7 @@ module.exports ={
           let  user = message.mentions.users.first();
 
             let em = new MessageEmbed()
-            .setDescription(`**${message.author.tag}** kisses **${user.tag} !Cute!**`)
+            .setDescription(`**${message.author.username}** kisses **${user.username} !Cute!**`)
             .setImage(random)
             .setColor('LUMINOUS_VIVID_PINK')
             .setFooter("They are looking hot!")
