@@ -38,7 +38,7 @@ module.exports ={
                     .setDescription(`**You can get your daily coins again in ${time.hours}h ${time.minutes}m ${time.seconds}s **`)
                     .setFooter("default countdown is 1 day")
                     message.channel.send(embed)
-                    .setColor('BLUE')
+                    .setColor("GREEN")
                 }else{
                     data.Money +=reward
                     data.daily =Date.now()
