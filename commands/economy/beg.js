@@ -9,17 +9,6 @@ mongoose.connect(config.mongoPass,{
 const Data = require('../../models/data.js')
 const data = require("../../models/data.js")
 
-
-let replies = [
-            {
-                title:"nony"},
-              {
-                title:"Narender modi"
-              },
-              {
-                 title:"warren buffet"
-                },
-            ];
 module.exports={
     name:"beg",
     category:"economy",
@@ -27,9 +16,7 @@ module.exports={
     run:async(client,message,args) =>{
 
 
-      
-        let result = replies[Math.floor(Math.random() * replies.length)];
-       
+   
 
         let timeout = 45000;
         let reward = Math.floor(Math.random()* Math.floor(600)) //You can set any number
@@ -66,7 +53,7 @@ module.exports={
                     data.save().catch(err => console.log(err));
                     let member = message.guild.members.cache.random();
                     let embed = new MessageEmbed()
-                    .setDescription(`**Congrats!! ${result} ** finally donated ${reward} coins to ${message.author}!`)
+                    .setDescription(`**Congrats!! ${member} ** finally donated ${reward} coins to ${message.author}!`)
                     .setColor("RANDOM")
                     message.channel.send(embed)
 
