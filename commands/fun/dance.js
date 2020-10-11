@@ -30,17 +30,14 @@ module.exports ={
      
             let random = gifs[Math.floor(Math.random( )* gifs.length)]
             
-            let mUser = message.mentions.members.first()
   
-            
-          let  user = message.mentions.users.first();
-
-            let em = new MessageEmbed()
-            .setDescription(`** ${user.tag} is dancing!**`)
+            let em1 = new MessageEmbed()
+            .setDescription(`** ${message.author.username} is dancing!**`)
             .setImage(random)
             .setColor('LUMINOUS_VIVID_PINK')
          .setFooter("looking hot!")
-            message.channel.send(em)
+            message.channel.send(em1)
 
+          
         }
     }
