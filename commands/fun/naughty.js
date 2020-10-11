@@ -38,7 +38,7 @@ let gifs = [
     
   ]
 module.exports ={
-    name:"kill",
+    name:"naughty",
     category:"fun",
 
     run:async(client,message,args) =>{
@@ -48,12 +48,18 @@ module.exports ={
             let random = gifs[Math.floor(Math.random( )* gifs.length)]
             
             let mUser = message.mentions.members.first()
-            if(!mUser)return message.channel.send("please mention someone to kill")
+            if(!mUser)return message.channel.send("please mention a naughty person")
             
           let  user = message.mentions.users.first();
 
            
-            message.channel.send(`${user.username} ${random}`)
+          let em = new MessageEmbed()
+          .setDescription(`**Be careful ${user.username} is becoming naughty**`)
+          .setImage(random)
+          .setColor('LUMINOUS_VIVID_PINK')
+       
+          message.channel.send(em)
+
 
         }
     }

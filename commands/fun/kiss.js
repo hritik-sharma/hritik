@@ -27,6 +27,7 @@ let gifs = [
     "https://media1.tenor.com/images/f8893038cf33dc68575140ad1d9e11a3/tenor.gif?itemid=6155648",
     "https://media1.tenor.com/images/5deb0f0b23aa10247db6a9d009d3f0d6/tenor.gif?itemid=18047510",
     "https://media1.tenor.com/images/7cf581fa0999dc33fc02c7a7f01697eb/tenor.gif?itemid=15069984",
+    "https://media1.tenor.com/images/1faaa0600c731b86736a2aa6570fbca2/tenor.gif?itemid=17227304"
   ]
 module.exports ={
     name:"kiss",
