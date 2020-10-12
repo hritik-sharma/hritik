@@ -27,7 +27,7 @@ module.exports ={
                 })
                 newD.save().catch(err => console.log(err));
                 let user = message.mentions.users.first() || message.author ;
-                return message.channel.send({embed:{color:"810CEE",description:`${user.username} you have been 500 coins as starter`}})
+                return message.channel.send({embed:{color:"810CEE",description:`${user.tag} you have been 500 coins as starter`}})
             }else{
                 let user = message.mentions.users.first() || message.author ;
                 let embed = new MessageEmbed()

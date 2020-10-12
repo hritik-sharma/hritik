@@ -39,16 +39,16 @@ module.exports ={
                     .setFooter("default countdown is 1 day")
                     .setColor("BLUE")
                     message.channel.send(embed)
-                  
+                    .setColor("GREEN")
                 }else{
                     data.Money +=reward
                     data.daily =Date.now()
                     data.save().catch(err => console.log(err))
 
                     let embed = new MessageEmbed()
-                    .setTitle(`**Here are your daily coins, ${message.author.tag}**`)
+                    .setTitle(`**Here are your daily coins, ${message.author.username}**`)
                     .setDescription(`${reward} coins were placed in your wallet! `)
-                      .setColor("BLUE")
+                    .setColor("GREEN")
                     message.channel.send(embed)
                 }
             }
