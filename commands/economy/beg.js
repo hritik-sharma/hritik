@@ -44,7 +44,7 @@ module.exports={
                     let embed = new MessageEmbed()
                     .setTitle('**Slow it down**')
                     .setDescription(` **Dude!!** I'm not an ATM stop asking for money \n You can beg again in **${time.minutes}m ${time.seconds}s** \n The default cooldown is **45s**`)
-                    .setColor("RANDOM")
+                    .setColor("BLUE")
 
                     message.channel.send(embed)
                 }else{
@@ -53,8 +53,8 @@ module.exports={
                     data.save().catch(err => console.log(err));
                     let member = message.guild.members.cache.random();
                     let embed = new MessageEmbed()
-                    .setDescription(`**Congrats!! ${member} ** finally donated ${reward} coins to ${message.author}!`)
-                    .setColor("RANDOM")
+                    .setDescription(`**Congrats!! ${member.username} ** finally donated ${reward} coins to ${message.author.username}!`)
+                    .setColor(RANDOM)
                     message.channel.send(embed)
 
                 }

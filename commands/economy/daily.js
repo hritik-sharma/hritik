@@ -48,7 +48,7 @@ module.exports ={
                     let embed = new MessageEmbed()
                     .setTitle(`**Here are your daily coins, ${message.author.tag}**`)
                     .setDescription(`${reward} coins were placed in your wallet! `)
-
+                      .setColor("BLUE")
                     message.channel.send(embed)
                 }
             }
