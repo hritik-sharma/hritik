@@ -39,7 +39,7 @@ module.exports ={
                     .setFooter("default countdown is 1 day")
                     .setColor("BLUE")
                     message.channel.send(embed)
-                    .setColor("GREEN")
+                  
                 }else{
                     data.Money +=reward
                     data.daily =Date.now()
