@@ -8,14 +8,14 @@ module.exports ={
      let mesg = args.slice(1).join(" ");
      if (!msg.member.hasPermission('MANAGE_CHANNELS')) return msg.reply({embed:{color:'RED',description:'you do not have the permissions to use this command'}})
 
-     
-     if(!mesg) return msg.reply({embed:{color:"RED",description:"please write something to announce \n Command usage: ```/announce  (channel_name) (write_announcement)``` \n Remember: brackets are just for an instance"}})
+
+     if(!mesg) return msg.reply({embed:{color:"RED",description:"please write something to announce \n Command usage: ```prefix announce  (#channel_name) (write_announcement)``` \n Remember: brackets are just for an instance"}})
     
 
     
 let channel1 = msg.mentions.channels.first()
 
-if(!channel1) return msg.reply({embed:{color:"RED",description:"please mention a channel to announce \n Command usage: ```/announce (channel_name)  (write_announcement)```  \n Remember: brackets are just for an instance"}})
+if(!channel1) return msg.reply({embed:{color:"RED",description:"please mention a channel to announce \n Command usage: ```prefix announce (#channel_name)  (write_announcement)```  \n Remember: brackets are just for an instance"}})
 
      var embed = new MessageEmbed()
  .setTitle('New Server Announcement')
