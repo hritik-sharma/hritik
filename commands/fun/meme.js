@@ -14,7 +14,7 @@ run:async(client,message,args)=>{
     .setImage(img)
 	.setTitle(`From /r/${random}`) 
 	.setURL(`https://reddit.com/${random}`)
-	
+	.setColor("LUMINOUS_VIVID_PINK")
 	message.channel.send(embed)
 	}
 	}

@@ -15,7 +15,7 @@ module.exports ={
 
         let uReply  = args[0];
         if(!uReply){
-            return message.channel.send(`Please play with one of these replies:\`${replies.join(",")}\``)
+            return message.channel.send(`Please mention one of these replies:\`${replies.join(",")}\``)
         }
         if(!replies.includes(uReply)){
             return message.channel.send(`Only these responses are acceptable:\`${replies.join(",")}\``)
