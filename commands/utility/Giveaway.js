@@ -6,23 +6,23 @@ module.exports = {
   usage: "<time> <channel> <prize>",
   category: "fun",
   run: async (bot, message, args) => {
-    if (!args[0]) return message.channel.send(`You did not specify your time!`);
+    if (!args[0]) return message.channel.send(`You did not specify your time! \n usage: <time> <channel> <prize>`);
     if (
       !args[0].endsWith("d") &&
       !args[0].endsWith("h") &&
       !args[0].endsWith("m")
     )
       return message.channel.send(
-        `You did not use the correct formatting for the time!`
+        `You did not use the correct formatting for the time! \n try: m or h or d `
       );
     if (isNaN(args[0][0])) return message.channel.send(`That is not a number!`);
     let channel = message.mentions.channels.first();
     if (!channel)
       return message.channel.send(
-        `I could not find that channel in the guild!`
+        `I could not find that channel in the guild! \n usage: <time> <channel> <prize>`
       );
     let prize = args.slice(2).join(" ");
-    if (!prize) return message.channel.send(`No prize specified!`);
+    if (!prize) return message.channel.send(`No prize specified! \n <time> <channel> <prize>`);
     message.channel.send(`*Giveaway created in ${channel}*`);
     let Embed = new MessageEmbed()
       .setTitle(`New giveaway!`)
