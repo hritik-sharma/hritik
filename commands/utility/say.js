@@ -10,7 +10,7 @@ module.exports ={
         let msg1 = args.join(" ");
         if (!msg1) {
         return msg.channel.send(`${msg.author.username} please enter some text`)
-                      }
+        .then(m=> m.delete({timeout:10000}));  }
         msg.channel.send(`${msg1}`) 
       
         
