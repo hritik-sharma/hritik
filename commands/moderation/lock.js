@@ -10,6 +10,7 @@ module.exports ={
     run:async(client,message,args) =>{
         if(!client.lockit) client.lockit =[]
         if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.channel.send({embed:{color:"5169F2",description:"❌ You dont't have permission to use this command"}})
+        .then(m=> m.delete({timeout:10000}));
         message.channel.createOverwrite(message.guild.id,{
             SEND_MESSAGES:false
 

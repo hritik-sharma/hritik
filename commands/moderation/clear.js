@@ -14,15 +14,17 @@ if (!message.member.hasPermission("MANAGE_MEMBERS")) {
 }
 let deleteAmount;
  
-if(parseInt(args[0]) > 100 ) {
-    deleteAmount = 100;
+if(parseInt(args[0]) > 10000 ) {
+    deleteAmount = 1000;
 } else {
     deleteAmount = parseInt(args[0]);
 }
 
 message.channel.bulkDelete(deleteAmount, true)
    .then(deleted=> message.channel.send(`i deleted \`${deleted.size}\`messages.`))
-  .catch(err => message.reply(`something went wrong.... ${err}`));
+  .catch(err => message.reply(`something went wrong.... ${err}`))
+ 
 }
+
  } 
     }

@@ -24,7 +24,8 @@ if(!channel1) return msg.reply({embed:{color:"RED",description:"please mention a
 .setFooter(`Announcement by ${msg.author.tag}`)
      channel1.send(embed)
 
-     msg.channel.send({embed:{color:"GREEN",description:`**Done!** \n Announcement has been sent to ${channel1} `}});
+     msg.channel.send({embed:{color:"GREEN",description:`**Done!** \n Announcement has been sent to ${channel1} `}})
+     .then(m=> m.delete({timeout:10000}));
 
     }
 }

@@ -5,9 +5,11 @@ module.exports ={
     category:"moderation",
 
     run:async(client,msg,args) =>{
-        if(!msg.member.hasPermission('BAN_MEMBERS')) return msg.reply({embed:{color:"RED",description: 'You dont have permission to use this command'}});
-  var user = msg.mentions.users.first();
- if (!user) return msg.reply ({embed:{color :"RED", description:"Mention a user to ban"}});
+        if(!msg.member.hasPermission('BAN_MEMBERS')) return msg.reply({embed:{color:"RED",description: 'You dont have permission to use this command'}})
+        .then(m=> m.delete({timeout:10000}));
+        var user = msg.mentions.users.first();
+ if (!user) return msg.reply ({embed:{color :"RED", description:"Mention a user to ban"}})
+ .then(m=> m.delete({timeout:10000}));
 
  var member;
  try {
@@ -17,11 +19,14 @@ module.exports ={
     member = null;
  }
  if(!member) return msg.reply({embed:{color:"RED", description:"The specified user is not in server"}})
+ .then(m=> m.delete({timeout:10000}));
  if(member){
-     if(member.hasPermission('BAN_MEMBERS')) return msg.reply ({embed:{color:"RED",description:"cannot kick this user , has ban members permission"}});
+     if(member.hasPermission('BAN_MEMBERS')) return msg.reply ({embed:{color:"RED",description:"cannot kick this user , has ban members permission"}})
+     .then(m=> m.delete({timeout:10000}));
    
      var reason = args.slice(1).join(' ');
      if(!reason) return msg.reply({embed:{color:"RED",description:"Mention a reason to ban the user"}})
+     .then(m=> m.delete({timeout:10000}));
 
      var channel = msg.guild.channels.cache.find(c => c.name === 'potato');
 
