@@ -1,10 +1,11 @@
 const Discord = module.require("discord.js");
  module.exports = {
      name: "spam",
-     description: "Another fun command", run: async(client, message, args) => { 
+     description: "Another fun command",
+      run: async(client, message, args) => { 
 
 
-        if (!msg.member.hasPermission('MANAGE_CHANNELS')) return msg.reply({embed:{color:'RED',description:'you do not have the permissions to use this command'}})
+        if (!message.member.hasPermission('MANAGE_CHANNELS')) return msg.reply({embed:{color:'RED',description:'you do not have the permissions to use this command'}})
 
 
 
