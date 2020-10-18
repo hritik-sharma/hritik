@@ -9,15 +9,8 @@ let gifs = [
    "https://media1.tenor.com/images/434fdc6e1adcb24eaf731c624898be08/tenor.gif?itemid=16284896",
    "https://media1.tenor.com/images/11f4047c394a3ca8b53e3b7a11b4f3c5/tenor.gif?itemid=13720303",
    "https://media1.tenor.com/images/86bd4ab7511d7ce2e8dc8634257d96c0/tenor.gif?itemid=11602504",
-   "",
-   "",
-   "",
-   "",
-   "",
-   "",
-   "",
-   "",
-   "",
+   
+
 
 
   ]
