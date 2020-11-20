@@ -9,7 +9,7 @@ if (message.deletable) {
 
 message.delete ();
 
-if (!message.member.hasPermission("MANAGE_MEMBERS")) {
+if (!message.member.hasPermission("MANAGE_CHANNELS")) {
     return message.reply("you cant delete messages......").then(n => m.delete(5000));
 }
 let deleteAmount;
@@ -21,7 +21,7 @@ if(parseInt(args[0]) > 10000 ) {
 }
 
 message.channel.bulkDelete(deleteAmount, true)
-   .then(deleted=> message.channel.send(`i deleted \`${deleted.size}\`messages.`))
+   .then(deleted=> message.channel.send(`Purged \`${deleted.size}\`messages.`))
   .catch(err => message.reply(`something went wrong.... ${err}`))
  
 }
