@@ -10,9 +10,8 @@ const Discord = module.require("discord.js");
 
 
      let msg = args.join(" ");
-     if (!msg) {
-     return message.channel.send("Error : No Text Found to Spam")
-                   }
+     if (!msg) return message.channel.send("Error : No Text Found to Spam")
+                   
      message.channel.send(`${msg}`) 
      message.channel.send(`${msg}`) 
      message.channel.send(`${msg}`)  

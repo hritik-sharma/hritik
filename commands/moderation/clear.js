@@ -9,7 +9,7 @@ if (message.deletable) {
 
 message.delete ();
 
-if (!message.member.hasPermission("MANAGE_CHANNELS")) {
+if (!message.member.hasPermission('KICK_MEMBERS')) {
     return message.reply("you cant delete messages......").then(n => m.delete(5000));
 }
 let deleteAmount;

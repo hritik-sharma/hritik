@@ -29,9 +29,6 @@ module.exports = {
     let msg1 = await bot.channels.cache.get(channel.id).send(Embed);
     await msg1.react("1️⃣");
     await msg1.react("2️⃣");
-    await msg1.react("3️⃣");
-    await msg1.react("4️⃣");
-    await msg1.react("5️⃣");
-    message.channel.send("you can remove reactions manually that much you want")
+ 
   },
 };
