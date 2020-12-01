@@ -6,7 +6,7 @@ module.exports ={
 
     run:async(client,msg,args) =>{
 
-        if(!msg.member.hasPermission('MANAGE_CHANNELS')) return msg.reply({embed:{color:"RED",description: 'You dont have permission to use this command'}});
+        if(!msg.member.hasPermission('MANAGE_MESSAGES')) return msg.reply({embed:{color:"RED",description: 'You dont have permission to use this command'}});
   
         var user = msg.mentions.users.first();
           

@@ -9,7 +9,7 @@ if (message.deletable) {
 
 message.delete ();
 
-if (!message.member.hasPermission('KICK_MEMBERS')) return message.reply("you do not have the permission to delete messages")
+if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply("you do not have the permission to delete messages")
 let deleteAmount;
  
 if(parseInt(args[0]) > 10000 ) {
