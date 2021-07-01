@@ -1,6 +1,6 @@
 const Discord = module.require("discord.js");
  module.exports = {
-     name: "spam",
+     name: "bigspam",
      description: "Another fun command",
       run: async(client, message, args) => { 
 
